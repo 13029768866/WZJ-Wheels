@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/13029768866/WZJ-Wheels/issues"
   },
-  "homepage": "https://github.com/13029768866/WZJ-Wheels#readme"
+  "homepage": "https://github.com/13029768866/WZJ-Wheels#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "parcel-bundler": "^1.11.0",
+    "vue": "^2.5.21"
+  }
 }
