@@ -1,0 +1,26 @@
+{
+  "name": "wzj_wheels",
+  "version": "0.0.1",
+  "description": "A UI Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/13029768866/WZJ-Wheels.git"
+  },
+  "keywords": [
+    "VUE",
+    "UI"
+  ],
+  "author": "WoodensRangerWZJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/13029768866/WZJ-Wheels/issues"
+  },
+  "homepage": "https://github.com/13029768866/WZJ-Wheels#readme",
+  "dependencies": {
+    "vue": "^2.5.21"
+  }
+}
