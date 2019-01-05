@@ -1,10 +1,14 @@
 .wzj-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: var(--font-siez);
   height: var(--button-height);
   padding: 0 1em;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--button-bg);
+  /*vertical-align: middle;*/
 }
 .wzj-button:hover {
   border-color: var(--border-color-hover);
@@ -15,3 +19,19 @@
 .wzj-button:focus {
   outline: none;
 }
+
+.wzj-iconPosition-left .icon {
+  order: 1;
+  margin-right: 3px;
+}
+.wzj-iconPosition-left .buttonContent {
+  order: 2;
+}
+
+.wzj-iconPosition-right .icon {
+  order: 2;
+  margin-left: 3px;
+}
+.wzj-iconPosition-right .buttonContent {
+  order: 1;
+}.icon{ width: 1em; height: 1em;}

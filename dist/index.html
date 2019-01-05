@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>WZJ-Wheels</title>
-    <style>*{
+    <style>* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        :root{
-            --button-height:32px;
-            --font-siez:14px;
+
+        :root {
+            --button-height: 32px;
+            --font-siez: 14px;
             --button-bg: #fff;
-            --button-active-bg:#eee;
+            --button-active-bg: #eee;
             --border-radius: 4px;
-            --color:#999;
-            --border-color:#999;
+            --color: #999;
+            --border-color: #999;
             --border-color-hover: #666;
         }
 
         /* 全局样式 */
-        #app{
+        #app {
             margin: 20px;
         }
-        body{
+
+        body {
             font-size: var(--font-siez);
+        }
+
+        /*svg全局样式*/
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
         }</style>
 
 <link rel="stylesheet" href="/app.a6a4d504.css"></head>
 <body>
 <div id="app">
-<wzj-button>
-</wzj-button></div>
+    <wzj-button>
+        按钮
+    </wzj-button>
+    <wzj-button icon="settings">
+        魏振江真帅
+    </wzj-button>
+    <wzj-button icon="download" iconposition="right">
+        魏振江真帅
+    </wzj-button>
+</div>
 </body>
 </html>
 <script src="/app.a6a4d504.js"></script>
+<script src="//at.alicdn.com/t/font_999617_2hwyulq9s67.js"></script>
