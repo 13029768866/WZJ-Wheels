@@ -81,3 +81,4 @@ parcel index.html --no--cache
 
 ### 5.4 、需求1,2BUG解决img
 
+![](https://github.com/13029768866/WZJ-Wheels/blob/master/readmeImg/inline-flexBUG.png)
