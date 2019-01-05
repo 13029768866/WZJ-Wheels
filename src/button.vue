@@ -33,7 +33,7 @@
         border-radius: var(--border-radius);
         border: 1px solid var(--border-color);
         background: var(--button-bg);
-        /*vertical-align: middle;*/
+        vertical-align: middle;
         &:hover {border-color: var(--border-color-hover);}
         &:active{background-color: var(--button-active-bg);}
         &:focus {outline: none;}
