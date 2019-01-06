@@ -83,7 +83,7 @@ parcel index.html --no--cache
 
 ### 5.4 、需求1,2BUG解决
 
-![](.\readmeImg\inline-flexBUG.png)
+![](./readmeImg/inline-flexBUG.png)
 
 ```
 解决办法：给button设置vertical-align: middle;
@@ -106,10 +106,10 @@ parcel index.html --no--cache
 
 ### 5.7、需求3，4BUG解决
 
-![](.\readmeImg\wzj-button-groupBUG.png)
+![](./readmeImg/wzj-button-groupBUG.png)
 
 **解决办法**
 
 在组件加载完成做一个判断，查看是否有非wzj-button元素并给与警告
 
-![](.\readmeImg\wzj-button-group解决办法.png)
+![](./readmeImg/wzj-button-group解决办法.png)
