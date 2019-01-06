@@ -11451,7 +11451,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],"src/button.vue":[function(require,module,exports) {
+},{}],"src/Button.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11466,28 +11466,36 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
 var _default = {
   props: {
     icon: {},
+    loadding: {
+      type: Boolean,
+      default: false
+    },
     iconposition: {
       type: String,
       default: 'left',
       validator: function validator(value) {
-        console.log(value);
         return !(value !== 'left' && value !== 'right');
       }
     }
   }
 };
 exports.default = _default;
-        var $b2175d = exports.default || module.exports;
+        var $25665b = exports.default || module.exports;
       
-      if (typeof $b2175d === 'function') {
-        $b2175d = $b2175d.options;
+      if (typeof $25665b === 'function') {
+        $25665b = $25665b.options;
       }
     
         /* template */
-        Object.assign($b2175d, (function () {
+        Object.assign($25665b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11497,11 +11505,21 @@ exports.default = _default;
     {
       staticClass: "wzj-button",
       class: ((_obj = {}),
-      (_obj["wzj-iconPosition-" + _vm.iconposition] = true),
-      _obj)
+      (_obj["wzj-icon-position-" + _vm.iconposition] = true),
+      _obj),
+      on: {
+        click: function($event) {
+          _vm.$emit("click")
+        }
+      }
     },
     [
-      _c("wzj-icon", { attrs: { buttonIconName: _vm.icon } }),
+      !_vm.loadding
+        ? _c("wzj-icon", { attrs: { buttonIconName: _vm.icon } })
+        : _c("wzj-icon", {
+            staticClass: "icon loadding",
+            attrs: { buttonIconName: "lodding" }
+          }),
       _vm._v(" "),
       _c("div", { staticClass: "buttonContent" }, [_vm._t("default")], 2)
     ],
@@ -11529,9 +11547,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$b2175d', $b2175d);
+            api.createRecord('$25665b', $25665b);
           } else {
-            api.reload('$b2175d', $b2175d);
+            api.reload('$25665b', $25665b);
           }
         }
 
@@ -11542,7 +11560,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/icon.vue":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Icon.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11558,14 +11576,14 @@ var _default = {
   props: ['buttonIconName']
 };
 exports.default = _default;
-        var $b07128 = exports.default || module.exports;
+        var $1ea494 = exports.default || module.exports;
       
-      if (typeof $b07128 === 'function') {
-        $b07128 = $b07128.options;
+      if (typeof $1ea494 === 'function') {
+        $1ea494 = $1ea494.options;
       }
     
         /* template */
-        Object.assign($b07128, (function () {
+        Object.assign($1ea494, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11596,9 +11614,102 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$b07128', $b07128);
+            api.createRecord('$1ea494', $1ea494);
           } else {
-            api.reload('$b07128', $b07128);
+            api.reload('$1ea494', $1ea494);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/ButtonGroup.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+var _default = {
+  mounted: function mounted() {
+    //查看组件加载完成时的所有子元素
+    console.log(this.$el.children);
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = this.$el.children[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var el = _step.value;
+        var elName = el.nodeName.toLocaleLowerCase();
+
+        if (elName != 'button') {
+          console.warn("wzj-button-group\u7684\u5B50\u5143\u7D20\u5E94\u8BE5\u90FDwzj-button,\u4F46\u4F60\u5199\u7684".concat(elName, "\u5E76\u4E0D\u7B26\u5408\u8981\u6C42"));
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return != null) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  }
+};
+exports.default = _default;
+        var $355834 = exports.default || module.exports;
+      
+      if (typeof $355834 === 'function') {
+        $355834 = $355834.options;
+      }
+    
+        /* template */
+        Object.assign($355834, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "wzj-button-group" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$355834', $355834);
+          } else {
+            api.reload('$355834', $355834);
           }
         }
 
@@ -11614,20 +11725,29 @@ render._withStripped = true
 
 var _vue = _interopRequireDefault(require("vue"));
 
-var _button = _interopRequireDefault(require("./button"));
+var _Button = _interopRequireDefault(require("./Button"));
 
-var _icon = _interopRequireDefault(require("./icon"));
+var _Icon = _interopRequireDefault(require("./Icon"));
+
+var _ButtonGroup = _interopRequireDefault(require("./ButtonGroup"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_vue.default.component('wzj-button', _button.default);
+_vue.default.component('wzj-button', _Button.default);
 
-_vue.default.component('wzj-icon', _icon.default);
+_vue.default.component('wzj-icon', _Icon.default);
+
+_vue.default.component('wzj-button-group', _ButtonGroup.default);
 
 new _vue.default({
-  el: '#app'
+  el: '#app',
+  data: {
+    loddingStatus: false,
+    loddingStatus1: false,
+    loddingStatus2: false
+  }
 });
-},{"vue":"node_modules/vue/dist/vue.common.js","./button":"src/button.vue","./icon":"src/icon.vue"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js","./Button":"src/Button.vue","./Icon":"src/Icon.vue","./ButtonGroup":"src/ButtonGroup.vue"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

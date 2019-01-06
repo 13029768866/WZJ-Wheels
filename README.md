@@ -62,6 +62,8 @@ parcel index.html --no--cache
 ```
 1、用户可以根据属性icon控制图片样式
 2、用户可以根据iconPosition控制图标位置
+3、用户点击时候加载lodding
+4、按钮组
 ```
 
 ### 5.2、需求1实现思路
@@ -79,5 +81,35 @@ parcel index.html --no--cache
 2、通过props校验设置默认值解决undefined问题，通过validator解决用户传入错误问题
 ```
 
-### 5.4 、需求1,2BUG解决img
+### 5.4 、需求1,2BUG解决
 
+![](.\readmeImg\inline-flexBUG.png)
+
+```
+解决办法：给button设置vertical-align: middle;
+```
+
+### 5.5、需求3实现思路
+
+```
+1、通过属性loddingStatus切换正在加载状态
+2、点击切换loddingStatus状态实现正在加载和图标切换实现
+```
+
+### 5.6、需求4实现思路
+
+```
+1、创建button-group组件，通过slot接受button并进行组合
+2、通过first-child,last-child解决圆角问题
+3、通过margin-left:-1px;和z-index:1解决鼠标经过状态问题
+```
+
+### 5.7、需求3，4BUG解决
+
+![](.\readmeImg\wzj-button-groupBUG.png)
+
+**解决办法**
+
+在组件加载完成做一个判断，查看是否有非wzj-button元素并给与警告
+
+![](.\readmeImg\wzj-button-group解决办法.png)

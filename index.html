@@ -10,7 +10,7 @@
             box-sizing: border-box;
         }
 
-        :root {
+        html {
             --button-height: 32px;
             --font-siez: 14px;
             --button-bg: #fff;
@@ -18,7 +18,7 @@
             --border-radius: 4px;
             --color: #999;
             --border-color: #999;
-            --border-color-hover: #666;
+            --border-color-hover: #03bacd;
         }
 
         /* 全局样式 */
@@ -44,20 +44,34 @@
 </head>
 <body>
 <div id="app">
-    <wzj-button>
+    <wzj-button :loadding="loddingStatus" @click="loddingStatus = !loddingStatus">
         按钮
     </wzj-button>
-    <wzj-button icon="settings">
+
+    <wzj-button icon="settings" :loadding="loddingStatus1" @click="loddingStatus1 = !loddingStatus1">
         魏振江真帅
     </wzj-button>
-    <wzj-button icon="download" iconposition="right">
+
+    <wzj-button icon="download" iconposition="right" :loadding="loddingStatus2"
+                @click="loddingStatus2 = !loddingStatus2">
         魏振江真帅
     </wzj-button>
-    <wzj-button icon="left">
-        对不对得齐
-    </wzj-button>
+
+    <wzj-button-group>
+        <div>
+            <wzj-button icon="left">上一页</wzj-button>
+        </div>
+        <wzj-button>更多</wzj-button>
+        <wzj-button icon="right" iconPosition="right">下一页</wzj-button>
+    </wzj-button-group>
+
+    <wzj-button-group>
+        <wzj-button icon="left">上一页</wzj-button>
+        <wzj-button>更多</wzj-button>
+        <wzj-button icon="right" iconPosition="right">下一页</wzj-button>
+    </wzj-button-group>
 </div>
 </body>
 </html>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_999617_2hwyulq9s67.js"></script>
+<script src="//at.alicdn.com/t/font_999617_g72kvkti3sr.js"></script>

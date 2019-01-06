@@ -1,3 +1,11 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .wzj-button {
   display: inline-flex;
   align-items: center;
@@ -9,6 +17,7 @@
   border: 1px solid var(--border-color);
   background: var(--button-bg);
   vertical-align: middle;
+  cursor: pointer;
 }
 .wzj-button:hover {
   border-color: var(--border-color-hover);
@@ -20,18 +29,44 @@
   outline: none;
 }
 
-.wzj-iconPosition-left .icon {
+/*iconPosition*/
+.wzj-icon-position-left .icon {
   order: 1;
   margin-right: 3px;
 }
-.wzj-iconPosition-left .buttonContent {
+.wzj-icon-position-left .buttonContent {
   order: 2;
 }
 
-.wzj-iconPosition-right .icon {
+.wzj-icon-position-right .icon {
   order: 2;
   margin-left: 3px;
 }
-.wzj-iconPosition-right .buttonContent {
+.wzj-icon-position-right .buttonContent {
   order: 1;
-}.icon{ width: 1em; height: 1em;}
+}
+
+/*lodding*/
+.loadding {
+  animation: spin infinite 1s linear;
+}.icon{ width: 1em; height: 1em;}.wzj-button-group {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.wzj-button-group .wzj-button {
+  border-radius: 0;
+}
+.wzj-button-group .wzj-button:not(:first-child) {
+  margin-left: -1px;
+}
+.wzj-button-group .wzj-button:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.wzj-button-group .wzj-button:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.wzj-button-group .wzj-button:hover {
+  z-index: 1;
+}
