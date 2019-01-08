@@ -1,5 +1,3 @@
-# WZJ-Wheels
-A framework about UI
 # WZJ_Wheels
 
 ## 一、初始化
@@ -113,3 +111,20 @@ parcel index.html --no--cache
 在组件加载完成做一个判断，查看是否有非wzj-button元素并给与警告
 
 ![](./readmeImg/wzj-button-group解决办法.png)
+
+## 六、单元测试和mock
+
+### 6.1、单元测试依赖
+
+```
+npm i -D chai
+```
+
+### 6.2、单元测试简易模板
+
+![](./readmeImg/单元测试简易模板.png)
+
+#### 
+
+
+

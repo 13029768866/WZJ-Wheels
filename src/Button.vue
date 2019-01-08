@@ -4,8 +4,8 @@
             :class="{[`wzj-icon-position-${iconposition}`]:true}"
             @click="$emit('click')"
     >
-        <wzj-icon v-if="!loadding" :buttonIconName="icon"></wzj-icon>
-        <wzj-icon v-else class="icon loadding" buttonIconName="lodding"></wzj-icon>
+        <wzj-icon v-if="!loading" :buttonIconName="icon"></wzj-icon>
+        <wzj-icon v-else class="icon loading" buttonIconName="loading"></wzj-icon>
         <div class="buttonContent">
             <slot></slot>
         </div>
@@ -15,7 +15,7 @@
     export default {
         props: {
             icon: {},
-            loadding: {
+            loading: {
                 type: Boolean,
                 default: false
             },
@@ -88,8 +88,8 @@
         }
     }
 
-    /*lodding*/
-    .loadding {
+    /*loading*/
+    .loading {
         animation: spin infinite 1s linear
     }
 </style>

@@ -46,8 +46,8 @@
   order: 1;
 }
 
-/*lodding*/
-.loadding {
+/*loading*/
+.loading {
   animation: spin infinite 1s linear;
 }.icon{ width: 1em; height: 1em;}.wzj-button-group {
   display: inline-flex;

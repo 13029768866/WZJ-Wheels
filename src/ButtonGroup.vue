@@ -7,7 +7,7 @@
     export default {
         mounted() {
             //查看组件加载完成时的所有子元素
-            console.log(this.$el.children);
+            // console.log(this.$el.children);
             for(let el of this.$el.children){
                 let elName = el.nodeName.toLocaleLowerCase()
                 if(elName != 'button'){
