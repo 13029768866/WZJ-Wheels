@@ -11488,14 +11488,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $5bea75 = exports.default || module.exports;
+        var $25665b = exports.default || module.exports;
       
-      if (typeof $5bea75 === 'function') {
-        $5bea75 = $5bea75.options;
+      if (typeof $25665b === 'function') {
+        $25665b = $25665b.options;
       }
     
         /* template */
-        Object.assign($5bea75, (function () {
+        Object.assign($25665b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11547,9 +11547,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$5bea75', $5bea75);
+            api.createRecord('$25665b', $25665b);
           } else {
-            api.reload('$5bea75', $5bea75);
+            api.reload('$25665b', $25665b);
           }
         }
 
@@ -11576,14 +11576,14 @@ var _default = {
   props: ['buttonIconName']
 };
 exports.default = _default;
-        var $138f9a = exports.default || module.exports;
+        var $1ea494 = exports.default || module.exports;
       
-      if (typeof $138f9a === 'function') {
-        $138f9a = $138f9a.options;
+      if (typeof $1ea494 === 'function') {
+        $1ea494 = $1ea494.options;
       }
     
         /* template */
-        Object.assign($138f9a, (function () {
+        Object.assign($1ea494, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11614,9 +11614,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$138f9a', $138f9a);
+            api.createRecord('$1ea494', $1ea494);
           } else {
-            api.reload('$138f9a', $138f9a);
+            api.reload('$1ea494', $1ea494);
           }
         }
 
@@ -11673,14 +11673,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $bc068a = exports.default || module.exports;
+        var $355834 = exports.default || module.exports;
       
-      if (typeof $bc068a === 'function') {
-        $bc068a = $bc068a.options;
+      if (typeof $355834 === 'function') {
+        $355834 = $355834.options;
       }
     
         /* template */
-        Object.assign($bc068a, (function () {
+        Object.assign($355834, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11707,9 +11707,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$bc068a', $bc068a);
+            api.createRecord('$355834', $355834);
           } else {
-            api.reload('$bc068a', $bc068a);
+            api.reload('$355834', $355834);
           }
         }
 
@@ -22970,7 +22970,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60980" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54700" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
