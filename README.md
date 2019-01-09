@@ -118,6 +118,7 @@ parcel index.html --no--cache
 
 ```
 npm i -D chai
+npm i -D chai-spies
 ```
 
 ### 6.2、单元测试简易模板
