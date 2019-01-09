@@ -62,4 +62,21 @@ const expect = chai.expect
     button.$el.remove()
     button.$destroy()
 }
-//
+//iconposition单元测试
+{
+	const div = document.createElement('div')
+	document.body.appendChild(div)
+	const Constructor = Vue.extend(Button)
+	const button  = new Constructor({
+		propsData:{
+			icon: 'settings',
+			iconposition: 'right'
+		}
+	})
+	button.$mount(div)
+	let svg = button.$el.querySelector('svg')
+	let { order } = window.getComputedStyle(svg)
+	expect(order).to.eq('1')
+	button.$el.remove()
+	button.$destroy()
+}

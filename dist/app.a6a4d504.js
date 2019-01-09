@@ -11488,14 +11488,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $25665b = exports.default || module.exports;
+        var $5bea75 = exports.default || module.exports;
       
-      if (typeof $25665b === 'function') {
-        $25665b = $25665b.options;
+      if (typeof $5bea75 === 'function') {
+        $5bea75 = $5bea75.options;
       }
     
         /* template */
-        Object.assign($25665b, (function () {
+        Object.assign($5bea75, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11547,9 +11547,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$25665b', $25665b);
+            api.createRecord('$5bea75', $5bea75);
           } else {
-            api.reload('$25665b', $25665b);
+            api.reload('$5bea75', $5bea75);
           }
         }
 
@@ -11576,14 +11576,14 @@ var _default = {
   props: ['buttonIconName']
 };
 exports.default = _default;
-        var $1ea494 = exports.default || module.exports;
+        var $138f9a = exports.default || module.exports;
       
-      if (typeof $1ea494 === 'function') {
-        $1ea494 = $1ea494.options;
+      if (typeof $138f9a === 'function') {
+        $138f9a = $138f9a.options;
       }
     
         /* template */
-        Object.assign($1ea494, (function () {
+        Object.assign($138f9a, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11614,9 +11614,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$1ea494', $1ea494);
+            api.createRecord('$138f9a', $138f9a);
           } else {
-            api.reload('$1ea494', $1ea494);
+            api.reload('$138f9a', $138f9a);
           }
         }
 
@@ -11673,14 +11673,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $355834 = exports.default || module.exports;
+        var $bc068a = exports.default || module.exports;
       
-      if (typeof $355834 === 'function') {
-        $355834 = $355834.options;
+      if (typeof $bc068a === 'function') {
+        $bc068a = $bc068a.options;
       }
     
         /* template */
-        Object.assign($355834, (function () {
+        Object.assign($bc068a, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11707,9 +11707,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$355834', $355834);
+            api.createRecord('$bc068a', $bc068a);
           } else {
-            api.reload('$355834', $355834);
+            api.reload('$bc068a', $bc068a);
           }
         }
 
@@ -22165,7 +22165,35 @@ var expect = _chai.default.expect; // icon单元测试
   _button.$el.remove();
 
   _button.$destroy();
-} //
+} //iconposition单元测试
+
+{
+  var _div2 = document.createElement('div');
+
+  document.body.appendChild(_div2);
+
+  var _Constructor2 = _vue.default.extend(_Button.default);
+
+  var _button2 = new _Constructor2({
+    propsData: {
+      icon: 'settings',
+      iconposition: 'right'
+    }
+  });
+
+  _button2.$mount(_div2);
+
+  var svg = _button2.$el.querySelector('svg');
+
+  var _window$getComputedSt = window.getComputedStyle(svg),
+      order = _window$getComputedSt.order;
+
+  expect(order).to.eq('1');
+
+  _button2.$el.remove();
+
+  _button2.$destroy();
+}
 },{"vue":"node_modules/vue/dist/vue.common.js","./Button":"src/Button.vue","./Icon":"src/Icon.vue","./ButtonGroup":"src/ButtonGroup.vue","chai":"node_modules/chai/index.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -22193,7 +22221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58243" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60980" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
