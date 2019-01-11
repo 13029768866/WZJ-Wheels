@@ -112,6 +112,14 @@ parcel index.html --no--cache
 
 ![](./readmeImg/wzj-button-group解决办法.png)
 
+### 5.8、单闭合标签bug
+
+使用单闭合标签，后面的内容不显示。
+
+原因：**Vue使用的是Html语法，单闭合标签是XML语法。自定义组件按照Html语法解析！**
+
+解决办法：**使用自定义组件时，需要使用双标签写法**
+
 ## 六、单元测试和mock
 
 ### 6.1、单元测试依赖
@@ -125,17 +133,13 @@ npm i -D chai-spies
 
 ![](./readmeImg/单元测试简易模板.png)
 
-## 七、自动化测试
+## 七、Input组件设计
 
-### 7.1、安装自动化测试依赖
+### 7.1、Input组件需求分析
 
-1. Karma（`[ˈkɑrmə]` 卡玛）是一个测试运行器，它可以呼起浏览器，加载测试脚本，然后运行测试用例
-2. Mocha（`[ˈmoʊkə]` 摩卡）是一个单元测试框架/库，它可以用来写测试用例
-3. Sinon（西农）是一个 spy / stub / mock 库，用以辅助测试（使用后才能理解）
 
-```
-npm i -D karma karma-chrome-launcher karma-mocha karma-sinon-chai mocha sinon sinon-chai karma-chai karma-chai-spies
-```
+
+
 
 
 

@@ -5,6 +5,7 @@
 </template>
 <script>
     export default {
+        name:'WzjButtonGroup',
         mounted() {
             //查看组件加载完成时的所有子元素
             // console.log(this.$el.children);

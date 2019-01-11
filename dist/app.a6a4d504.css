@@ -69,4 +69,35 @@
 }
 .wzj-button-group .wzj-button:hover {
   z-index: 1;
+}.wrapper[data-v-9d74dc] {
+  display: inline-flex;
+  font-size: 14px;
+  align-items: center;
+}
+.wrapper *[data-v-9d74dc]:not(:last-child) {
+  margin-right: 5px;
+}
+.wrapper > input[data-v-9d74dc] {
+  height: 32px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.wrapper > input[data-v-9d74dc]:hover {
+  border: 1px solid #666;
+}
+.wrapper > input[disabled][data-v-9d74dc] {
+  border-color: #bbb;
+  color: #bbb;
+  cursor: not-allowed;
+}
+.error > input[data-v-9d74dc] {
+  border-color: #F1453D;
+}
+.error .error_icon[data-v-9d74dc] {
+  font-size: 1.5em;
+  fill: #F1453D;
+}
+.error .error_msg[data-v-9d74dc] {
+  color: #F1453D;
 }

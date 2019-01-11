@@ -29,7 +29,9 @@
         body {
             font-size: var(--font-siez);
         }
-
+        section{
+            margin: 20px;
+        }
         /*svg全局样式*/
         .icon {
             width: 1em;
@@ -44,34 +46,45 @@
 </head>
 <body>
 <div id="app">
-    <wzj-button :loading="loadingStatus" @click="loadingStatus = !loadingStatus">
-        按钮
-    </wzj-button>
+   <section>
+       <wzj-input value="魏振江"></wzj-input>
+       <wzj-input value="魏振江" disabled></wzj-input>
+       <wzj-input value="魏振江" readonly></wzj-input>
+   </section>
+    <section>
+        <wzj-input value="魏振江" error="错误信息"></wzj-input>
+    </section>
 
-    <wzj-button icon="settings" :loading="loadingStatus1" @click="loadingStatus1 = !loadingStatus1">
-        魏振江真帅
-    </wzj-button>
 
-    <wzj-button icon="download" iconposition="right" :loading="loadingStatus2"
-                @click="loadingStatus2 = !loadingStatus2">
-        魏振江真帅
-    </wzj-button>
+    <!--<wzj-button :loading="loadingStatus" @click="loadingStatus = !loadingStatus">-->
+        <!--按钮-->
+    <!--</wzj-button>-->
 
-    <wzj-button-group>
-        <div>
-            <wzj-button icon="left">上一页</wzj-button>
-        </div>
-        <wzj-button>更多</wzj-button>
-        <wzj-button icon="right" iconposition="right">下一页</wzj-button>
-    </wzj-button-group>
+    <!--<wzj-button icon="settings" :loading="loadingStatus1" @click="loadingStatus1 = !loadingStatus1">-->
+        <!--魏振江真帅-->
+    <!--</wzj-button>-->
 
-    <wzj-button-group>
-        <wzj-button icon="left">上一页</wzj-button>
-        <wzj-button>更多</wzj-button>
-        <wzj-button icon="right" iconposition="right">下一页</wzj-button>
-    </wzj-button-group>
+    <!--<wzj-button icon="download" iconposition="right" :loading="loadingStatus2"-->
+                <!--@click="loadingStatus2 = !loadingStatus2">-->
+        <!--魏振江真帅-->
+    <!--</wzj-button>-->
+
+    <!--<wzj-button-group>-->
+        <!--<div>-->
+            <!--<wzj-button icon="left">上一页</wzj-button>-->
+        <!--</div>-->
+        <!--<wzj-button>更多</wzj-button>-->
+        <!--<wzj-button icon="right" iconposition="right">下一页</wzj-button>-->
+    <!--</wzj-button-group>-->
+
+    <!--<wzj-button-group>-->
+        <!--<wzj-button icon="left">上一页</wzj-button>-->
+        <!--<wzj-button>更多</wzj-button>-->
+        <!--<wzj-button icon="right" iconposition="right">下一页</wzj-button>-->
+    <!--</wzj-button-group>-->
+
 </div>
 </body>
 </html>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_999617_z6e5p39fhms.js"></script>
+<script src="//at.alicdn.com/t/font_999617_ipsfhamyv.js"></script>

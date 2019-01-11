@@ -11472,6 +11472,7 @@ exports.default = void 0;
 //
 //
 var _default = {
+  name: 'WzjButton',
   props: {
     icon: {},
     loading: {
@@ -11573,6 +11574,7 @@ exports.default = void 0;
 //
 //
 var _default = {
+  name: 'WzjIcon',
   props: ['buttonIconName']
 };
 exports.default = _default;
@@ -11640,6 +11642,7 @@ exports.default = void 0;
 //
 //
 var _default = {
+  name: 'WzjButtonGroup',
   mounted: function mounted() {
     //查看组件加载完成时的所有子元素
     // console.log(this.$el.children);
@@ -11720,7 +11723,131 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"node_modules/assertion-error/index.js":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Input.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Icon = _interopRequireDefault(require("./Icon"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "WzjInput",
+  components: {
+    Icon: _Icon.default
+  },
+  props: {
+    value: {
+      type: String
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
+    error: {
+      type: String
+    }
+  }
+};
+exports.default = _default;
+        var $9d74dc = exports.default || module.exports;
+      
+      if (typeof $9d74dc === 'function') {
+        $9d74dc = $9d74dc.options;
+      }
+    
+        /* template */
+        Object.assign($9d74dc, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "wrapper", class: { error: _vm.error } },
+    [
+      _c("input", {
+        attrs: { disabled: _vm.disabled, readonly: _vm.readonly, type: "text" },
+        domProps: { value: _vm.value }
+      }),
+      _vm._v(" "),
+      _vm.error
+        ? [
+            _c("icon", {
+              staticClass: "error_icon",
+              attrs: { buttonIconName: "error" }
+            }),
+            _vm._v(" "),
+            _c("span", { staticClass: "error_msg" }, [
+              _vm._v(_vm._s(_vm.error))
+            ])
+          ]
+        : _vm._e()
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-9d74dc",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$9d74dc', $9d74dc);
+          } else {
+            api.reload('$9d74dc', $9d74dc);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./Icon":"src/Icon.vue","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"node_modules/assertion-error/index.js":[function(require,module,exports) {
 /*!
  * assertion-error
  * Copyright(c) 2013 Jake Luer <jake@qualiancy.com>
@@ -22788,6 +22915,8 @@ var _Icon = _interopRequireDefault(require("./Icon"));
 
 var _ButtonGroup = _interopRequireDefault(require("./ButtonGroup"));
 
+var _Input = _interopRequireDefault(require("./Input"));
+
 var _chai = _interopRequireDefault(require("chai"));
 
 var _chaiSpies = _interopRequireDefault(require("chai-spies"));
@@ -22799,6 +22928,8 @@ _vue.default.component('wzj-button', _Button.default);
 _vue.default.component('wzj-icon', _Icon.default);
 
 _vue.default.component('wzj-button-group', _ButtonGroup.default);
+
+_vue.default.component('wzj-input', _Input.default);
 
 new _vue.default({
   el: '#app',
@@ -22943,7 +23074,7 @@ _chai.default.use(_chaiSpies.default); // icon单元测试
 
   expect(spy).to.have.been.called();
 }
-},{"vue":"node_modules/vue/dist/vue.common.js","./Button":"src/Button.vue","./Icon":"src/Icon.vue","./ButtonGroup":"src/ButtonGroup.vue","chai":"node_modules/chai/index.js","chai-spies":"node_modules/chai-spies/chai-spies.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js","./Button":"src/Button.vue","./Icon":"src/Icon.vue","./ButtonGroup":"src/ButtonGroup.vue","./Input":"src/Input.vue","chai":"node_modules/chai/index.js","chai-spies":"node_modules/chai-spies/chai-spies.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -22970,7 +23101,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54700" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63423" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

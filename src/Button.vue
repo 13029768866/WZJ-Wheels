@@ -13,6 +13,7 @@
 </template>
 <script>
     export default {
+        name:'WzjButton',
         props: {
             icon: {},
             loading: {

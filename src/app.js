@@ -2,10 +2,12 @@ import Vue from 'vue'
 import Button from './Button'
 import Icon from './Icon'
 import ButtonGroup from './ButtonGroup'
+import Input from './Input'
 
 Vue.component('wzj-button',Button)
 Vue.component('wzj-icon',Icon)
 Vue.component('wzj-button-group',ButtonGroup)
+Vue.component('wzj-input',Input)
 
 
 new Vue({
