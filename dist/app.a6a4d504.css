@@ -69,35 +69,114 @@
 }
 .wzj-button-group .wzj-button:hover {
   z-index: 1;
-}.wrapper[data-v-9d74dc] {
+}.wrapper[data-v-69d36d] {
   display: inline-flex;
   font-size: 14px;
   align-items: center;
 }
-.wrapper *[data-v-9d74dc]:not(:last-child) {
+.wrapper *[data-v-69d36d]:not(:last-child) {
   margin-right: 5px;
 }
-.wrapper > input[data-v-9d74dc] {
+.wrapper > input[data-v-69d36d] {
   height: 32px;
   border: 1px solid #999;
   border-radius: 4px;
   padding: 0 8px;
 }
-.wrapper > input[data-v-9d74dc]:hover {
+.wrapper > input[data-v-69d36d]:hover {
   border: 1px solid #666;
 }
-.wrapper > input[disabled][data-v-9d74dc] {
+.wrapper > input[disabled][data-v-69d36d] {
   border-color: #bbb;
   color: #bbb;
   cursor: not-allowed;
 }
-.error > input[data-v-9d74dc] {
+.error > input[data-v-69d36d] {
   border-color: #F1453D;
 }
-.error .error_icon[data-v-9d74dc] {
+.error .error_icon[data-v-69d36d] {
   font-size: 1.5em;
   fill: #F1453D;
 }
-.error .error_msg[data-v-9d74dc] {
+.error .error_msg[data-v-69d36d] {
   color: #F1453D;
+}.row[data-v-2e4423] {
+  display: flex;
+}.col[data-v-05162c] {
+  height: 50px;
+  width: 50%;
+  background-color: #ccc;
+  border: 1px solid red;
+}
+.col.col-1[data-v-05162c] {
+  width: 4.1666666667%;
+}
+.col.col-2[data-v-05162c] {
+  width: 8.3333333333%;
+}
+.col.col-3[data-v-05162c] {
+  width: 12.5%;
+}
+.col.col-4[data-v-05162c] {
+  width: 16.6666666667%;
+}
+.col.col-5[data-v-05162c] {
+  width: 20.8333333333%;
+}
+.col.col-6[data-v-05162c] {
+  width: 25%;
+}
+.col.col-7[data-v-05162c] {
+  width: 29.1666666667%;
+}
+.col.col-8[data-v-05162c] {
+  width: 33.3333333333%;
+}
+.col.col-9[data-v-05162c] {
+  width: 37.5%;
+}
+.col.col-10[data-v-05162c] {
+  width: 41.6666666667%;
+}
+.col.col-11[data-v-05162c] {
+  width: 45.8333333333%;
+}
+.col.col-12[data-v-05162c] {
+  width: 50%;
+}
+.col.col-13[data-v-05162c] {
+  width: 54.1666666667%;
+}
+.col.col-14[data-v-05162c] {
+  width: 58.3333333333%;
+}
+.col.col-15[data-v-05162c] {
+  width: 62.5%;
+}
+.col.col-16[data-v-05162c] {
+  width: 66.6666666667%;
+}
+.col.col-17[data-v-05162c] {
+  width: 70.8333333333%;
+}
+.col.col-18[data-v-05162c] {
+  width: 75%;
+}
+.col.col-19[data-v-05162c] {
+  width: 79.1666666667%;
+}
+.col.col-20[data-v-05162c] {
+  width: 83.3333333333%;
+}
+.col.col-21[data-v-05162c] {
+  width: 87.5%;
+}
+.col.col-22[data-v-05162c] {
+  width: 91.6666666667%;
+}
+.col.col-23[data-v-05162c] {
+  width: 95.8333333333%;
+}
+.col.col-24[data-v-05162c] {
+  width: 100%;
 }
