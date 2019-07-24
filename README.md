@@ -3,7 +3,7 @@
 ## 一、初始化
 
 ```
-1、配置MIT协议，Create a file输入License
+1、配置MIT协议，Create a file输入License然后顺序操作
 2、npm init配置包信息
 3、安装vue
 ```
