@@ -4,9 +4,11 @@ import router from "./router";
 import store from "./store";
 
 Vue.config.productionTip = false;
+import './assets/icon/iconfont.css'
 
 new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount("#app");
+
